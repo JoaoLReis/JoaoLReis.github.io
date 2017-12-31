@@ -1,0 +1,133 @@
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay_top {
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+  bottom: auto;
+  top: 0;
+  padding: 1em;
+  height: 4.75em;
+  background: #79FAC4;
+  color: #3c4a50;
+  -webkit-transition: -webkit-transform 0.15s;
+  transition: transform 0.15s;
+  -webkit-transform: translate3d(0,-100%,0);
+  transform: translate3d(0,-100%,0);
+  visibility: hidden;
+}
+
+.hovereffect .overlay {
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+  top: auto;
+  bottom: 0;
+  padding: 1em;
+  height: 6.5em;
+  background: #79FAC4;
+  color: #3c4a50;
+  -webkit-transition: -webkit-transform 0.15s;
+  transition: transform 0.15s;
+  -webkit-transform: translate3d(0,100%,0);
+  transform: translate3d(0,100%,0);
+  visibility: hidden;
+}
+
+.hovereffect .hovereffect_img {
+  display: block;
+  position: relative;
+  -webkit-transition: -webkit-transform 0.15s;
+  transition: transform 0.15s;
+}
+
+.hovereffect:hover .hovereffect_img {
+  -webkit-transform: scale3d(1.1,1.1,1.1);
+  transform: scale3d(1.1,1.1,1.1);
+  filter: brightness(0.6);
+  -webkit-filter: brightness(0.6);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 1.5em;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  float: left;
+  margin: 0px;
+  display: inline-block;
+}
+
+.hovereffect p{
+  float: right;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+  font-size: 1em;
+}
+
+.hovereffect .overlay h2,
+.hovereffect p{
+  -webkit-transition: -webkit-transform 0.15s;
+  transition: transform 0.15s;
+  -webkit-transform: translate3d(0,200%,0);
+  transform: translate3d(0,200%,0);
+  visibility: visible;
+}
+
+.hovereffect .overlay_top h2{
+  -webkit-transition: -webkit-transform 0.15s;
+  transition: transform 0.15s;
+  -webkit-transform: translate3d(0,-200%,0);
+  transform: translate3d(0,-200%,0);
+  visibility: visible;
+}
+
+.hovereffect p{
+  display: inline-block;
+  padding: 8px 10px;
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.hovereffect:hover .overlay_top,
+.hovereffect:hover .overlay,
+.hovereffect:hover h2,
+.hovereffect:hover p{
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.hovereffect:hover h2 {
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+}
+
+.hovereffect:hover p:nth-child(3) {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+.hovereffect:hover p:nth-child(2) {
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}
+
+.hovereffect:hover p:first-child {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}

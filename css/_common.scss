@@ -1,0 +1,174 @@
+body {
+  padding-top: 50px;
+  height: 100vh;
+}
+
+footer {
+  margin: 50px 0;
+}
+
+.image_selector_thumbnail{
+    padding:5px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0px 1px 5px 2px lightgrey inset;
+}
+
+@media (min-width: $screen-md-min) {
+  .image_selector_thumbnail{
+    padding:5px;
+    height: $album_image_height;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    box-shadow: 0px 1px 5px 2px lightgrey inset;
+  }
+}
+
+.padding{
+  padding: 5px;
+}
+
+@media (min-width: $screen-md-min) {
+  .album_list_description{
+    height: $album_image_height;
+    overflow: auto;
+  }
+}
+
+.work_category_list
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items:center;
+}
+
+@media (min-width: $screen-md-min) {
+  .work_category_list
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:flex-end;
+  }
+}
+
+.container_box{
+  box-shadow: 0px 0px 10px black inset;
+  padding: 4px;
+}
+
+.main_page_container{
+  position:relative;
+  height: $main_image_height;
+}
+
+.main_page_image{
+  background-size: cover;
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.album_image_container{
+  position:relative;
+  height: $album_image_height;
+}
+
+.album_thumbnail_container{
+  position: relative;
+  height:180px;
+  width:250px;
+  border: 2px solid rgba(100, 100, 100, 0.5);
+  margin: 2px;
+}
+
+.album_image{
+  background-size: contain;
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.text_size_huge{
+  font-size: xx-large;
+}
+
+.text_size_big{
+  font-size: x-large;
+}
+
+.text_size_large{
+  font-size: large;
+}
+
+.text_body {
+  font-family: serif;
+  font-size:large;
+}
+
+.contact_glyphicon_well{
+  height: 40px;
+  text-align:center;
+}
+
+.contact_glyphicon{
+  font-size:large;
+}
+
+.portfolio-item {
+  margin-bottom: 25px;
+}
+
+.border_top{
+  border-top: 1px solid black;
+}
+
+.border_bottom{
+  border-bottom: 1px solid black;
+}
+
+.well_item_selected
+{
+  background-color: black;
+  color: white;
+}
+
+.well_item_selected a
+{
+  color: white;
+}
+
+.well_item
+{
+  color: black;
+}
+
+.well_item a
+{
+  color: black;
+}
+
+//@mixin float-grid-columns($class, $i: 1, $list: ".col-#{$class}-#{$i}") {
+//  @for $i from (1 + 1) through 12 {
+//    $list: "#{$list}, .col-#{$class}-#{$i}";
+//  }
+//  #{$list} {
+//    float: left;
+//  }
+//}
+//
+//@mixin make-grid($class) {
+//  @include float-grid-columns($class);
+//}
+//
+//@media (min-width: 789) {
+//  @include make-grid(lg);
+//}
